@@ -1,6 +1,6 @@
 package com.codersbay.gerhofer;
 
-public enum Colors {
+public enum Color {
     WHITE,
     BLACK,
     RED,

@@ -4,7 +4,7 @@ public class Circle extends Shape {
 
     private double radius;
 
-    public Circle(Colors color, boolean isFilled, double radius) {
+    public Circle(Color color, boolean isFilled, double radius) {
         super(color, isFilled);
         if (radius <= 0) {
             throw new IllegalArgumentException("Radius cannot be 0 or negative");

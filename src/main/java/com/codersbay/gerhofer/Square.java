@@ -1,27 +1,21 @@
 package com.codersbay.gerhofer;
 
-public class Square extends Shape {
+public class Square extends Rectangle {
 
-    private double sideLength;
-
-    public Square(Colors color, boolean isFilled, double sideLength) {
-        super(color, isFilled);
-        if (sideLength <= 0) {
+    public Square(Color color, boolean isFilled, double width, double length) {
+        super(color, isFilled, width, length);
+        if (width <= 0 || length <= 0) {
             throw new IllegalArgumentException("Sidelength cannot be 0 or negative");
-        } else {
-            this.sideLength = sideLength;
         }
     }
 
     @Override
     public double getArea() {
-        double area = this.sideLength * this.sideLength;
-        return area;
+        return super.getArea();
     }
 
     @Override
     public double getPerimeter() {
-        double scope = this.sideLength * 4;
-        return scope;
+        return super.getPerimeter();
     }
 }

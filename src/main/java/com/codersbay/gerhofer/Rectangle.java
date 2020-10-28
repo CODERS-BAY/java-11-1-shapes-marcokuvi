@@ -5,7 +5,7 @@ public class Rectangle extends Shape {
     private double width;
     private double length;
 
-    public Rectangle(Colors color, boolean isFilled, double width, double length) {
+    public Rectangle(Color color, boolean isFilled, double width, double length) {
         super(color, isFilled);
         if (width <= 0 || length <= 0) {
             throw new IllegalArgumentException("Width or Length cannot be 0 or negative");
